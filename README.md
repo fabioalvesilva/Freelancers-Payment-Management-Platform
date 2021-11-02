@@ -10,5 +10,17 @@ All the documentation is available in 'docs' folder, wich include Use Cases Diag
 
 You can find all the credentials for login in POTAplication.java class.
 
+## Application screenshots
+
 ![Administrator Menu](/img/admin_menu.png "Admin Menu")
+
+![Collaborator Menu](/img/collaborator_menu.png "Collaborator Menu")
+
+![Create Task](/img/create_taskpng "Create task")
+
+![Login](/img/login.png "Login")
+
+![Register Freelancer](/img/register_freelancer.png "Register Freelancer")
+
+![Thank You](/img/thank_you.png "Thank You")
 
