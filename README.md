@@ -16,7 +16,7 @@ You can find all the credentials for login in POTAplication.java class.
 
 ![Collaborator Menu](/img/collaborator_menu.png "Collaborator Menu")
 
-![Create Task](/img/create_taskpng "Create task")
+![Create Task](/img/create_task.png "Create task")
 
 ![Login](/img/login.png "Login")
 
