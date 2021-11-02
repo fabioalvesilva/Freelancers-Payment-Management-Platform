@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="530px" preserveAspectRatio="none" style="width:836px;height:530px;" version="1.1" viewBox="0 0 836 530" width="836px" zoomAndPan="magnify"><defs><filter height="300%" id="fl8bazygr0xaj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="4.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="8.0" dy="8.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fl8bazygr0xaj)" height="113.2422" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="104" y="192.9766"/><rect fill="#FFFFFF" filter="url(#fl8bazygr0xaj)" height="70.6211" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="474" y="235.5977"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 5.0,5.0;" x1="114" x2="114" y1="172.9766" y2="356.2188"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 5.0,5.0;" x1="483" x2="483" y1="172.9766" y2="356.2188"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="184" x="16" y="167.0703">System Timer</text><ellipse cx="114" cy="26" fill="#FEFECE" filter="url(#fl8bazygr0xaj)" rx="16" ry="16" style="stroke: #A80036; stroke-width: 4.0;"/><path d="M114,42 L114,96 M88,58 L140,58 M114,96 L88,126 M114,96 L140,126 " fill="none" filter="url(#fl8bazygr0xaj)" style="stroke: #A80036; stroke-width: 4.0;"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="184" x="16" y="381.2891">System Timer</text><ellipse cx="114" cy="407.1953" fill="#FEFECE" filter="url(#fl8bazygr0xaj)" rx="16" ry="16" style="stroke: #A80036; stroke-width: 4.0;"/><path d="M114,423.1953 L114,477.1953 M88,439.1953 L140,439.1953 M114,477.1953 L88,507.1953 M114,477.1953 L140,507.1953 " fill="none" filter="url(#fl8bazygr0xaj)" style="stroke: #A80036; stroke-width: 4.0;"/><rect fill="#FEFECE" filter="url(#fl8bazygr0xaj)" height="60.9766" style="stroke: #A80036; stroke-width: 3.0;" width="238" x="361" y="102"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="210" x="375" y="143.0703">:MakePayments</text><rect fill="#FEFECE" filter="url(#fl8bazygr0xaj)" height="60.9766" style="stroke: #A80036; stroke-width: 3.0;" width="238" x="361" y="354.2188"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="210" x="375" y="395.2891">:MakePayments</text><rect fill="#FFFFFF" filter="url(#fl8bazygr0xaj)" height="113.2422" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="104" y="192.9766"/><rect fill="#FFFFFF" filter="url(#fl8bazygr0xaj)" height="70.6211" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="474" y="235.5977"/><polygon fill="#A80036" points="450,227.5977,470,235.5977,450,243.5977,458,235.5977" style="stroke: #A80036; stroke-width: 2.0;"/><line style="stroke: #A80036; stroke-width: 2.0;" x1="124" x2="462" y1="235.5977" y2="235.5977"/><text fill="#000000" font-family="sans-serif" font-size="26" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18" x="138" y="226.1133">1</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacingAndGlyphs" textLength="286" x="164" y="226.1133">Scheduled date Arrives</text><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 2.0,2.0;" x1="494" x2="578" y1="304.2188" y2="304.2188"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 2.0,2.0;" x1="578" x2="578" y1="304.2188" y2="330.2188"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 2.0,2.0;" x1="484" x2="578" y1="330.2188" y2="330.2188"/><polygon fill="#A80036" points="504,322.2188,484,330.2188,504,338.2188,496,330.2188" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="26" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18" x="508" y="294.7344">2</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacingAndGlyphs" textLength="278" x="534" y="294.7344">Starts Pyment process</text><!--MD5=[a76ca8f1c87f29064ad6a87ba33952e3]
+@startuml
+autonumber
+
+
+Actor "System Timer" as COLAB
+
+participant ":MakePayments" as SIST
+
+activate COLAB
+COLAB -> SIST : Scheduled date Arrives
+activate SIST
+SIST - -> SIST : Starts Pyment process
+deactivate SIST
+
+deactivate COLAB
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 11:51:06 WEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.5+10-b520.38
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: en
+Country: PT
+--></g></svg>

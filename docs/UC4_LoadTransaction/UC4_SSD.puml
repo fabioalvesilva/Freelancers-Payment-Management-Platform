@@ -1,0 +1,22 @@
+@startuml
+autonumber
+actor "Collaborator" as COL
+
+activate COL
+COL -> ":System" : ask to import to the system a file with transactions
+activate ":System"
+":System" --> COL : ask which file has to load
+deactivate ":System"
+
+COL -> ":System" : choose the file
+activate ":System"
+":System" --> COL : validates the data filled, show to collaborator the amount to be paid to every freelancer and ask to collaborator confirm the data.
+deactivate ":System"
+
+COL -> ":System" : confirm the data
+activate ":System"
+":System" --> COL : register the transaction and inform the collaborator the success of the operation
+deactivate ":System"
+
+deactivate COL
+@enduml

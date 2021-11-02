@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.ShowListTransactionUI">
+   <top>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #444F5A;" text="TRANSACTION LIST" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <ScrollPane prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <content>
+            <ListView fx:id="lstTransaction" prefHeight="278.0" prefWidth="596.0" />
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="600.0" prefWrapLength="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnConfirm" mnemonicParsing="false" onAction="#btnDoConfirm" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" text="Confirm" textFill="#f99999">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnDoCancel" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" text="Cancel" textFill="#f99999">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

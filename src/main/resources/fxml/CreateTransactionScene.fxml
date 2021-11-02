@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.CreateTransactionUI">
+   <top>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #444f5a;" text="CREATE TRANSACTION" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <FlowPane fx:id="buttonPane" alignment="CENTER_RIGHT" columnHalignment="CENTER" prefHeight="40.0" prefWidth="600.0" rowValignment="TOP" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnBack" disable="true" mnemonicParsing="false" onAction="#btnReturn" style="-fx-background-color: #fff; -fx-border-color: #f99999;" text="RETURN" textFill="#f99999">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="btnAddTask" mnemonicParsing="false" onAction="#btnDoAddTask" style="-fx-background-color: #fff; -fx-border-color: #f99999;" text="ADD TASK" textFill="#f99999">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="btnAddFreelancer" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnDoAddFreelancer" style="-fx-background-color: #FFFFFF; -fx-border-color: #f99999;" text="ADD FREELANCER" textFill="#f99999">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnDoAdd" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" text="ADD" textFill="#f99999">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnDoCancel" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" text="CANCEL" textFill="#f99999">
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </FlowPane>
+   </bottom>
+   <center>
+      <Pane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="gridCreateTask" maxHeight="500.0" maxWidth="600.0" minHeight="268.0" minWidth="580.0" prefHeight="268.0" prefWidth="600.0" visible="false">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <Label text="CREATE TASK" />
+                        <TextField fx:id="txtTaskId" maxHeight="1.7976931348623157E308" maxWidth="300.0" minHeight="30.0" minWidth="300.0" prefWidth="300.0" promptText="Id" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtDescription" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Description" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtAssignDuration" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Assign Duration (h)" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtCoustPerHour" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Cost per hour (€)" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtCategory" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Category" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="gridCreateFreelancer" maxHeight="634.0" maxWidth="600.0" minHeight="454.0" minWidth="580.0" prefHeight="513.0" prefWidth="600.0" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="613.0" prefWidth="600.0" spacing="15.0">
+                     <children>
+                        <Label text="CREATE FREELANCER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane prefHeight="30.0" prefWidth="492.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="497.0">
+                                 <children>
+                                    <TextField fx:id="txtFirstName" maxHeight="1.7976931348623157E308" maxWidth="140.0" minHeight="-Infinity" minWidth="150.0" prefHeight="33.0" prefWidth="150.0" promptText="First Name" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                                    <TextField fx:id="txtLastName" maxHeight="33.0" maxWidth="140.0" minHeight="33.0" minWidth="140.0" prefHeight="33.0" prefWidth="140.0" promptText="Last Name" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </GridPane>
+                        <TextField fx:id="txtExpertise" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Expertise" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtEmail" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Email" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtNIF" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Vat" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtIBAN" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="IBAN" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtStreet" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Street" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtPostalCode" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Zip-code" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtLocality" maxHeight="1.7976931348623157E308" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="City" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                        <ListView fx:id="lstvwListCountries" maxHeight="158.0" maxWidth="300.0" minHeight="14.0" minWidth="300.0" prefHeight="109.0" prefWidth="300.0" style="-fx-border-color: #f99999; -fx-background-color: #ffffff;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </ListView>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <GridPane fx:id="gridCreateTransaction" alignment="CENTER" prefHeight="447.0" prefWidth="600.0" visible="false">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="513.0" minHeight="10.0" prefHeight="367.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="txtTransactionID" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Transaction ID" style="-fx-background-color: #fff; -fx-border-color: #f99999;" />
+                        <TextField fx:id="txtDelay" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="Dealy" style="-fx-background-color: #fff; -fx-border-color: #f99999;" />
+                        <DatePicker fx:id="txtEndDate" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" promptText="End Date" style="-fx-background-color: #fff; -fx-border-color: #f99999;" />
+                        <TextArea fx:id="txtWorkDescription" maxWidth="300.0" minWidth="300.0" prefHeight="200.0" prefWidth="300.0" promptText="Work Description" style="-fx-background-color: #fffff; -fx-border-color: #f99999;" />
+                        <ComboBox fx:id="comboFreelancer" maxWidth="300.0" minWidth="300.0" onAction="#chooseFreelancer" prefWidth="300.0" promptText="Freelancer" style="-fx-background-color: #fff; -fx-border-color: #f99999;" />
+                        <ComboBox fx:id="comboTask" maxWidth="300.0" minWidth="300.0" onAction="#chooseTask" prefWidth="300.0" promptText="Task" style="-fx-background-color: #fff; -fx-border-color: #f99999;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </GridPane>
+            <GridPane fx:id="gridConfirm" alignment="CENTER" prefHeight="300.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="271.0" minHeight="10.0" prefHeight="257.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <FlowPane alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="btnConfirm" mnemonicParsing="false" onAction="#btnDoConfirm" style="-fx-background-color: #FFF; -fx-border-color: #f99999;" text="CONFIRM" textFill="#f99999">
+                           <FlowPane.margin>
+                              <Insets right="10.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button fx:id="btnCancelConfirmation" mnemonicParsing="false" onAction="#btnDoCancelConfirmation" style="-fx-background-color: #fff; -fx-border-color: #f99999;" text="CANCEL" textFill="#ff9999">
+                           <FlowPane.margin>
+                              <Insets right="10.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                  </FlowPane>
+                  <TextArea fx:id="txtConfirmTextField" editable="false" maxHeight="100.0" maxWidth="300.0" minHeight="100.0" minWidth="300.0" prefHeight="100.0" prefWidth="300.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

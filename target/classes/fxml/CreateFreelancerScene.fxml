@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.CreateFreelancerUI">
+   <top>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #444f5a;" text="FREELANCER REGISTER" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <GridPane minHeight="200.0" prefHeight="549.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="52.0" minHeight="42.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtFirstName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="33.0" promptText="First Name" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="150.0" right="5.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtLastName" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="33.0" promptText="Last Name" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="5.0" right="150.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+            <TextField fx:id="txtExpertise" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Expertise" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txtEmail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Email" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtNIF" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Vat" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtIBAN" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="IBAN" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtStreet" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Street" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtPostalCode" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Zip-code" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtLocality" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="City" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <ListView fx:id="lstvwListCountries" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="500.0" style="-fx-border-color: #f99999; -fx-background-color: #ffffff;" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></ListView>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" hgap="5.0" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#btnDoCreateFreelancer" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" text="ADD" textFill="#f99999" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnDoCancel" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" text="CANCEL" textFill="#f99999" />
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </FlowPane>
+   </bottom>
+</BorderPane>

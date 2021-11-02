@@ -1,0 +1,17 @@
+@startuml
+autonumber
+
+
+Actor "Administrator" as COLAB
+
+participant ":System" as SIST
+
+activate COLAB
+COLAB -> SIST : Send Notifications to delayed Freelancers
+activate SIST
+SIST --> SIST : Starts Notification Process
+deactivate SIST
+
+deactivate COLAB
+
+@enduml

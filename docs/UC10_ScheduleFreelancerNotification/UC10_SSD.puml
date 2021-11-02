@@ -1,0 +1,17 @@
+@startuml
+autonumber
+
+
+Actor "Administrator" as COLAB
+
+participant ":System" as SIST
+
+activate COLAB
+COLAB -> SIST : Schedules a date to notify Feelancers Behind Schedules (String Date)
+activate SIST
+SIST --> SIST : Add new Scheduled Notification(Date)
+deactivate SIST
+
+deactivate COLAB
+
+@enduml

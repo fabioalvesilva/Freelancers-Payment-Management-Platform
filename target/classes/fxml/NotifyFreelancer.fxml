@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.NotifyFreelancerUI">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-background-color: #444f5a;" text="NOTIFY FREELANCER" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSchedule" mnemonicParsing="false" onAction="#btnDoSchedule" style="-fx-background-color: #FFFFFF; -fx-border-color: #F99999;" text="SCHEDULE" textFill="#f99999">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNotfyNow" mnemonicParsing="false" onAction="#btnDoNotifyNow" style="-fx-background-color: #FFFFFF; -fx-border-color: #F99999;" text="NOTIFY NOW" textFill="#f99999">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </bottom>
+   <center>
+      <DatePicker fx:id="dataSelector" promptText="dd-mm-yyyy" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

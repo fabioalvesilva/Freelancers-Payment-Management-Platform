@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.SchedulePaymentsUI">
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" hgap="5.0" maxWidth="1.7976931348623157E308" prefHeight="80.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSeeUnpaidTasks" mnemonicParsing="false" onAction="#btnUnpaidTasks" style="-fx-background-color: #FFFFFF; -fx-border-color: #F99999;" text="UNPAID TASKS" textFill="#f99999" />
+            <Button fx:id="btnSchedulePayments" disable="true" onAction="#btnSchedulePayment" style="-fx-background-color: #FFFFFF; -fx-border-color: #F99999;" text="SCHEDULE PAYMENT" textFill="#f99999" />
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </FlowPane>
+   </bottom>
+   <left>
+      <FlowPane alignment="CENTER" prefHeight="472.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <ListView fx:id="listView" prefHeight="399.0" prefWidth="310.0">
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin>
+            </ListView>
+         </children>
+      </FlowPane>
+   </left>
+   <right>
+      <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" orientation="VERTICAL" vgap="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="dateSelector" maxWidth="1.7976931348623157E308" prefWidth="250.0" promptText="dd-mm-yyyy" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtTimeSelectorHour" maxWidth="1.7976931348623157E308" prefWidth="250.0" promptText="hh" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" />
+                  <TextField fx:id="txtTimeSelectorMinute" maxWidth="1.7976931348623157E308" prefWidth="250.0" promptText="mm" style="-fx-background-color: #ffffff; -fx-border-color: #f99999;" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </FlowPane>
+   </right>
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-background-color: #444f5a;" text="SCHEDULE PAYMENT" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

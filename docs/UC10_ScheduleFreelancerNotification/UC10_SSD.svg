@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="530px" preserveAspectRatio="none" style="width:1606px;height:530px;" version="1.1" viewBox="0 0 1606 530" width="1606px" zoomAndPan="magnify"><defs><filter height="300%" id="f1i3mcsitjvd9z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="4.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="8.0" dy="8.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1i3mcsitjvd9z)" height="113.2422" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="107" y="192.9766"/><rect fill="#FFFFFF" filter="url(#f1i3mcsitjvd9z)" height="70.6211" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="1047" y="235.5977"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 5.0,5.0;" x1="116" x2="116" y1="172.9766" y2="356.2188"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 5.0,5.0;" x1="1057" x2="1057" y1="172.9766" y2="356.2188"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="190" x="16" y="167.0703">Administrator</text><ellipse cx="117" cy="26" fill="#FEFECE" filter="url(#f1i3mcsitjvd9z)" rx="16" ry="16" style="stroke: #A80036; stroke-width: 4.0;"/><path d="M117,42 L117,96 M91,58 L143,58 M117,96 L91,126 M117,96 L143,126 " fill="none" filter="url(#f1i3mcsitjvd9z)" style="stroke: #A80036; stroke-width: 4.0;"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="190" x="16" y="381.2891">Administrator</text><ellipse cx="117" cy="407.1953" fill="#FEFECE" filter="url(#f1i3mcsitjvd9z)" rx="16" ry="16" style="stroke: #A80036; stroke-width: 4.0;"/><path d="M117,423.1953 L117,477.1953 M91,439.1953 L143,439.1953 M117,477.1953 L91,507.1953 M117,477.1953 L143,507.1953 " fill="none" filter="url(#f1i3mcsitjvd9z)" style="stroke: #A80036; stroke-width: 4.0;"/><rect fill="#FEFECE" filter="url(#f1i3mcsitjvd9z)" height="60.9766" style="stroke: #A80036; stroke-width: 3.0;" width="132" x="987" y="102"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="104" x="1001" y="143.0703">:System</text><rect fill="#FEFECE" filter="url(#f1i3mcsitjvd9z)" height="60.9766" style="stroke: #A80036; stroke-width: 3.0;" width="132" x="987" y="354.2188"/><text fill="#000000" font-family="sans-serif" font-size="28" lengthAdjust="spacingAndGlyphs" textLength="104" x="1001" y="395.2891">:System</text><rect fill="#FFFFFF" filter="url(#f1i3mcsitjvd9z)" height="113.2422" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="107" y="192.9766"/><rect fill="#FFFFFF" filter="url(#f1i3mcsitjvd9z)" height="70.6211" style="stroke: #A80036; stroke-width: 2.0;" width="20" x="1047" y="235.5977"/><polygon fill="#A80036" points="1023,227.5977,1043,235.5977,1023,243.5977,1031,235.5977" style="stroke: #A80036; stroke-width: 2.0;"/><line style="stroke: #A80036; stroke-width: 2.0;" x1="127" x2="1035" y1="235.5977" y2="235.5977"/><text fill="#000000" font-family="sans-serif" font-size="26" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18" x="141" y="226.1133">1</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacingAndGlyphs" textLength="856" x="167" y="226.1133">Schedules a date to notify Feelancers Behind Schedules (String Date)</text><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 2.0,2.0;" x1="1067" x2="1151" y1="304.2188" y2="304.2188"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 2.0,2.0;" x1="1151" x2="1151" y1="304.2188" y2="330.2188"/><line style="stroke: #A80036; stroke-width: 2.0; stroke-dasharray: 2.0,2.0;" x1="1057" x2="1151" y1="330.2188" y2="330.2188"/><polygon fill="#A80036" points="1077,322.2188,1057,330.2188,1077,338.2188,1069,330.2188" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="26" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18" x="1081" y="294.7344">2</text><text fill="#000000" font-family="sans-serif" font-size="26" lengthAdjust="spacingAndGlyphs" textLength="476" x="1107" y="294.7344">Add new Scheduled Notification(Date)</text><!--MD5=[1eebaecb3fd3c3cde105bd94ab6f1713]
+@startuml
+autonumber
+
+
+Actor "Administrator" as COLAB
+
+participant ":System" as SIST
+
+activate COLAB
+COLAB -> SIST : Schedules a date to notify Feelancers Behind Schedules (String Date)
+activate SIST
+SIST - -> SIST : Add new Scheduled Notification(Date)
+deactivate SIST
+
+deactivate COLAB
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 11:51:06 WEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.5+10-b520.38
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: en
+Country: PT
+--></g></svg>

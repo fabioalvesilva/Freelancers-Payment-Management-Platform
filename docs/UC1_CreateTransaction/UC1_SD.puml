@@ -1,0 +1,77 @@
+@startuml
+autonumber
+
+actor "Collaborator" as COL
+participant "CreateTransactionUI" as UI
+participant "MainApp" as APP
+participant "platform:Platform" as PLAT
+participant "freelancerRegister:FreelancerRegister" as RF
+participant "m_OrganizationRegister:OrganizationRegister" as ORGREG
+participant "org:Organization" as ORG
+participant "m_transactionList:TransactionList" as TL
+participant "listTasks:TaskList" as LTASK
+participant "freelancerController:CreateFreelancerController" as FCTRL
+participant "rt:RegisterTransaction" as RT
+participant "transaction:Transaction" as TRAN
+participant "listFreelancers:\n Set<Freelancer>" as LSTF
+participant "task:Task" as TASK
+participant "free:Freelancer" as FREE
+
+
+activate COL
+
+COL -> UI : ask to create an transaction
+activate UI
+UI -> APP : platform=getPlatform()
+activate APP
+deactivate APP
+UI -> PLAT : freelancerRegister=getFreelancerRegister()
+activate PLAT
+UI -> PLAT : org=getOrganizationByUserEmail(email)
+PLAT -> PLAT : m_OrganizationRegister=getOrganizationRegister()
+PLAT -> ORGREG :getOrganizationByUserEmail(email)
+activate ORGREG
+deactivate ORGREG
+deactivate PLAT
+
+UI -> RF : listFreelancers=getFreelancerList()
+activate RF
+deactivate RF
+
+UI -> LTASK : listTasks=getListTasks()
+activate LTASK
+deactivate LTASK
+UI -> COL : requests various information from the transaction\n(end date, delay, brief description of the quality of the work, the task and the freelancer)
+deactivate UI
+
+COL -> UI : fill the data requested 
+activate UI
+UI -> TL : transaction=createTransaction(id,endDate,delay,descWork,task,free)
+activate TL
+TL -> TRAN : transaction=create(id,endDate,delay,desckWork, freelancer,task)
+activate TRAN
+deactivate TRAN
+deactivate TL
+UI -> TRAN : amount=amountToPaid()
+activate TRAN
+deactivate TRAN
+UI -> COL : show to collaborator the amount to be paid to the freelancer and ask to collaborator confirm the data
+deactivate UI
+
+COL -> UI : confirm the data
+activate UI
+UI -> ORG : addTransaction(transaction)
+activate ORG
+ORG -> TL : addTransaction(transaction)
+activate TL
+TL -> TL : validateTransaction(transaction)
+TL -> TL : add(transaction)
+deactivate TL
+deactivate ORG
+
+UI -> COL : inform the collaborator the success of the operation
+deactivate UI
+
+deactivate COL
+
+@enduml
